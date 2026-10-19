@@ -446,11 +446,13 @@ img {
   display: grid;
   place-items: center;
   border-radius: 50%;
-  font-size: 23px;
-  font-weight: 300;
+  flex-shrink: 0;
   transition:
     background 0.2s,
     transform 0.3s;
+}
+.project-link > span > svg {
+  display: block;
 }
 .project-link:hover > span {
   background: var(--blue);
@@ -1063,9 +1065,6 @@ dialog[open] {
     align-self: end;
     width: 30px;
     font-size: 0;
-  }
-  .project-link > span {
-    font-size: 23px;
   }
   .about-feature {
     grid-template-columns: 1.3fr 0.8fr;
