@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <style>
+      html { background: #000; color-scheme: dark; }
+      html[data-theme="light"] { background: #fff; color-scheme: light; }
+    </style>
+    <script>
+      try {
+        if (localStorage.getItem("uemmebi-theme") === "light") {
+          document.documentElement.dataset.theme = "light";
+          document.querySelector('meta[name="theme-color"]').content = "#ffffff";
+        }
+      } catch {}
+    </script>
+    <meta
+      name="description"
+      content="Umberto Alinei (uemmebi), software developer and Computer Science student in Naples. Mobile apps, Java software and data, with a thoughtful approach."
+    />
+    <meta property="og:title" content="uemmebi - Umberto Alinei" />
+    <meta
+      property="og:description"
+      content="Umberto Alinei — 20-year-old developer and Computer Science student at Federico II and Apple Developer Academy in Naples."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48 64x64" type="image/x-icon" />
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <title>uemmebi - Umberto Alinei</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+      <div class="header-inner">
+        <a class="wordmark" href="#" aria-label="uemmebi, home">uemmebi</a>
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="#work">Work</a><a href="#about">About</a
+          ><a href="#journey">Background</a><a href="#support">Support</a
+          ><a class="nav-contact" href="#contact">Get in touch</a>
+        </nav>
+        <div class="header-actions">
+          <button
+            class="theme-button icon-button"
+            aria-label="Switch to dark theme"
+            title="Switch color theme"
+          >
+            <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.6 13.6A9 9 0 0 1 10.4 3.4a9 9 0 1 0 10.2 10.2Z" />
+            </svg></button
+          ><button
+            class="menu-toggle icon-button"
+            aria-label="Open navigation"
+            aria-controls="navigation"
+            aria-expanded="false"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content wrap">
+          <p class="hero-kicker hero-entry">Hello. I’m</p>
+          <h1 id="hero-title" class="hero-entry">Umberto Alinei</h1>
+          <p class="hero-description hero-entry">
+            A curious mind.<br /><span>A thoughtful developer.</span>
+          </p>
+          <p class="hero-intro hero-entry">
+            I’m a 20-year-old Computer Science student at the University of
+            Naples Federico II and the Apple Developer Academy in Naples.<br />
+            Passionate about technology, AI, and turning ideas into useful
+            software.
+          </p>
+          <div class="hero-links hero-entry">
+            <a class="button" href="#work">Explore my work</a
+            ><a class="plain-link" href="#about"
+              >Get to know me <span aria-hidden="true">›</span></a
+            >
+          </div>
+          <div class="hero-location hero-entry">
+            <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" />
+              <circle cx="12" cy="10" r="2" />
+            </svg>
+            Naples, Italy. Learning. Building. Growing.
+          </div>
+        </div>
+      </section>
+      <div class="intro-strip">
+        <p>
+          Currently exploring Swift and the Apple ecosystem at the
+          <strong>Apple Developer Academy</strong>.
+          <a href="#journey">My background <span aria-hidden="true">›</span></a>
+        </p>
+      </div>
+      <section id="work" class="section work" aria-labelledby="work-title">
+        <div class="wide-wrap">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Selected work</p>
+              <h2 id="work-title">Ideas into something real.</h2>
+            </div>
+            <p>Three academic projects.<br />A hands-on way to learn.</p>
+          </div>
+          <div class="projects-list">
+            <article class="project reveal">
+              <div class="project-icon weather-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64">
+                  <circle cx="32" cy="32" r="10" />
+                  <path
+                    d="M32 9v6M32 49v6M9 32h6M49 32h6M16 16l4 4M44 44l4 4M16 48l4-4M44 20l4-4"
+                  />
+                </svg>
+              </div>
+              <p class="project-category">Mobile development</p>
+              <h3>School Weather Station</h3>
+              <p class="project-tagline">
+                School weather.<br />Closer at hand.
+              </p>
+              <p class="project-description">
+                A native Android app for consulting the weather station at
+                I.T.I. Augusto Righi, integrated into the school’s website.
+              </p>
+              <div class="tags"><span>Java</span><span>Android</span></div>
+              <button
+                class="project-link"
+                data-project="weather"
+                aria-label="Learn more about School Weather Station"
+              >
+                Learn more <span aria-hidden="true">+</span>
+              </button>
+            </article>
+            <article class="project reveal">
+              <div class="project-icon exchange-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64">
+                  <path d="M13 24h35m-8-8 8 8-8 8M51 40H16m8-8-8 8 8 8" />
+                </svg>
+              </div>
+              <p class="project-category">Software & databases</p>
+              <h3>Object Exchange</h3>
+              <p class="project-tagline">
+                A second life.<br />A better system.
+              </p>
+              <p class="project-description">
+                A Java application with a relational database for buying,
+                exchanging and donating objects between users.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>SQL</span><span>OOP</span>
+              </div>
+              <button
+                class="project-link"
+                data-project="exchange"
+                aria-label="Learn more about Object Exchange"
+              >
+                Learn more <span aria-hidden="true">+</span>
+              </button>
+            </article>
+            <article class="project reveal">
+              <div class="project-icon structures-icon" aria-hidden="true">
+                <svg viewBox="0 0 64 64">
+                  <rect x="25" y="8" width="14" height="14" rx="4" />
+                  <rect x="7" y="43" width="14" height="14" rx="4" />
+                  <rect x="43" y="43" width="14" height="14" rx="4" />
+                  <path d="M32 22v12H14v9M32 34h18v9" />
+                </svg>
+              </div>
+              <p class="project-category">Algorithms & data</p>
+              <h3>Data Structures Library</h3>
+              <p class="project-tagline">
+                Small structures.<br />Strong foundations.
+              </p>
+              <p class="project-description">
+                A custom library of stacks, queues, lists and containers,
+                exploring efficient insertion and search algorithms.
+              </p>
+              <div class="tags">
+                <span>Data structures</span><span>Algorithms</span>
+              </div>
+              <button
+                class="project-link"
+                data-project="structures"
+                aria-label="Learn more about Data Structures Library"
+              >
+                Learn more <span aria-hidden="true">+</span>
+              </button>
+            </article>
+          </div>
+          <a
+            class="plain-link section-link reveal"
+            href="https://github.com/uemmebi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >See more on GitHub
+            <span aria-hidden="true"
+              ><svg
+                class="external-arrow"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path d="m4 12 8-8M4 4h8v8" /></svg></span
+          ></a>
+        </div>
+      </section>
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="wrap">
+          <div class="about-feature reveal">
+            <div class="about-feature-copy">
+              <p class="eyebrow">The person behind uemmebi</p>
+              <h2 id="about-title">
+                Built on learning.<br /><span>Driven by curiosity.</span>
+              </h2>
+              <p>
+                I’m Umberto Alinei, a developer and Computer Science student
+                based in Naples. My interests live where software, data and
+                real-world problems meet.
+              </p>
+              <p>
+                From an Android weather app to relational databases, I enjoy
+                understanding how things work — and figuring out how to make
+                them work better.
+              </p>
+            </div>
+            <figure class="hero-portrait">
+              <img
+                src="/portrait.png"
+                alt="Umberto Alinei wearing a dark suit"
+                width="384"
+                height="672"
+                loading="lazy"
+              />
+              <figcaption>Umberto Alinei · Naples, Italy</figcaption>
+            </figure>
+          </div>
+          <div class="about-layout">
+            <div class="about-copy reveal">
+              <h3>A solid foundation.<br />An open mind.</h3>
+              <p>
+                My technical background started at I.T.I. Augusto Righi and
+                continues at the University of Naples Federico II. At the Apple
+                Developer Academy in Naples, I’m exploring Swift and the Apple
+                ecosystem.
+              </p>
+              <p>
+                I bring a collaborative mindset and a simple habit: stay
+                curious, keep building.
+              </p>
+            </div>
+            <aside class="skills-panel reveal" aria-labelledby="skills-title">
+              <h3 id="skills-title">The tools I build with.</h3>
+              <div class="skills">
+                <span>Java</span><span>C++</span><span>C</span><span>Swift</span
+                ><span>SQL</span><span>HTML</span><span>PHP</span
+                ><span>Networking</span>
+              </div>
+              <div class="language-note">
+                <span>Italian <small>Native</small></span
+                ><span>English <small>Good proficiency</small></span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section
+        id="journey"
+        class="section journey"
+        aria-labelledby="journey-title"
+      >
+        <div class="wrap">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow">Background</p>
+              <h2 id="journey-title">Education & certifications</h2>
+            </div>
+          </div>
+          <div class="journey-grid">
+            <div class="education">
+              <h3 class="column-title reveal">Education</h3>
+              <div class="timeline-entry reveal">
+                <p class="entry-date">2026–Present</p>
+                <h4>Apple Developer Academy</h4>
+                <p>Naples, Italy</p>
+                <p class="entry-detail">
+                  App development & the Apple ecosystem.
+                </p>
+              </div>
+              <div class="timeline-entry reveal">
+                <p class="entry-date">2024–Present</p>
+                <h4>Computer Science</h4>
+                <p>University of Naples Federico II</p>
+                <p class="entry-detail">
+                  Software engineering, databases & data structures.
+                </p>
+              </div>
+              <div class="timeline-entry reveal">
+                <p class="entry-date">2019–2024</p>
+                <h4>IT & Computer Science</h4>
+                <p>I.T.I. Augusto Righi</p>
+                <p class="entry-detail">
+                  Programming, mobile development & networks.
+                </p>
+              </div>
+            </div>
+            <div class="certifications">
+              <h3 class="column-title reveal">Certifications & programs</h3>
+              <div class="cert academy-cert reveal">
+                <div>
+                  <h4>Apple Developer Academy</h4>
+                  <p>Naples · Ongoing program</p>
+                </div>
+                <span>2026–Present</span>
+              </div>
+              <div class="cert reveal">
+                <div>
+                  <h4>Apple Foundation Program</h4>
+                  <p>Apple</p>
+                </div>
+                <span>2024</span>
+              </div>
+              <div class="cert reveal">
+                <div>
+                  <h4>CCNAv7</h4>
+                  <p>Cisco</p>
+                </div>
+                <span>2024</span>
+              </div>
+              <div class="cert reveal">
+                <div>
+                  <h4>Java Fundamentals</h4>
+                  <p>Oracle</p>
+                </div>
+                <span>2023</span>
+              </div>
+              <div class="cert reveal">
+                <div>
+                  <h4>Internet of Things</h4>
+                  <p>Cisco</p>
+                </div>
+                <span>2022</span>
+              </div>
+              <div class="cert reveal">
+                <div>
+                  <h4>HCSAIC</h4>
+                  <p>Huawei</p>
+                </div>
+                <span>2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="section contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="wrap reveal">
+          <p class="eyebrow">Let’s connect</p>
+          <h2 id="contact-title">
+            Good things start<br />with a conversation.
+          </h2>
+          <p>
+            Have an idea, an opportunity, or a question?<br />I’d be happy to
+            hear from you.
+          </p>
+          <div class="email-wrap">
+            <a href="mailto:umberto.alinei@gmail.com"
+              >umberto.alinei@gmail.com
+              <span aria-hidden="true"
+                ><svg
+                  class="external-arrow"
+                  viewBox="0 0 16 16"
+                  aria-hidden="true"
+                >
+                  <path d="m4 12 8-8M4 4h8v8" /></svg></span></a
+            ><button
+              class="copy-email icon-button"
+              aria-label="Copy email address"
+              title="Copy email address"
+            >
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <rect x="8" y="8" width="12" height="12" rx="2" />
+                <path d="M16 8V4H4v12h4" />
+              </svg></button
+            ><span class="copy-status" role="status"></span>
+          </div>
+        </div>
+      </section>
+      <section
+        id="support"
+        class="support wrap reveal"
+        aria-labelledby="support-title"
+      >
+        <div class="support-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 24 24">
+            <path
+              d="M4 8h12v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5ZM16 9h2a3 3 0 0 1 0 6h-2M7 2v2M11 2v2M3 22h16"
+            />
+          </svg>
+        </div>
+        <div>
+          <h2 id="support-title">
+            A little support.<br />A lot of possibility.
+          </h2>
+          <p>
+            A small contribution to my learning and future projects.<br />Always
+            optional. Always appreciated.
+          </p>
+        </div>
+        <a
+          class="support-link button"
+          href="https://buy.stripe.com/aFaeVe1eAgys6gX68f53O00"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Buy me a coffee — open Stripe in a new tab"
+          >Buy me a coffee
+          <span aria-hidden="true"
+            ><svg class="external-arrow" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="m4 12 8-8M4 4h8v8" /></svg></span
+        ></a>
+      </section>
+    </main>
+    <div class="footer-shell">
+      <footer class="footer page">
+        <div class="footer-grid">
+          <div class="footer-identity">
+            <a class="wordmark" href="#" aria-label="uemmebi, back to top"
+              >uemmebi</a
+            >
+            <p>
+              Umberto Alinei<br />Software developer & Computer Science
+              student.<br />Naples, Italy.
+            </p>
+            <a class="footer-email" href="mailto:umberto.alinei@gmail.com"
+              >umberto.alinei@gmail.com</a
+            >
+          </div>
+          <div>
+            <h2 class="footer-heading">Explore</h2>
+            <a href="#work">Work</a><a href="#about">About</a
+            ><a href="#journey">Background</a><a href="#contact">Contact</a>
+          </div>
+          <div>
+            <h2 class="footer-heading">Elsewhere</h2>
+            <a
+              href="https://github.com/uemmebi"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub
+              <svg
+                class="external-arrow"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path d="m4 12 8-8M4 4h8v8" /></svg></a
+            ><a
+              href="https://x.com/uemmebi"
+              target="_blank"
+              rel="noopener noreferrer"
+              >X
+              <svg
+                class="external-arrow"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path d="m4 12 8-8M4 4h8v8" /></svg></a
+            ><a href="mailto:umberto.alinei@gmail.com"
+              >Email
+              <svg
+                class="external-arrow"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path d="m4 12 8-8M4 4h8v8" /></svg
+            ></a>
+          </div>
+          <div>
+            <h2 class="footer-heading">Support</h2>
+            <a
+              href="https://buy.stripe.com/aFaeVe1eAgys6gX68f53O00"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Buy me a coffee — open Stripe in a new tab"
+              >Buy me a coffee
+              <svg
+                class="external-arrow"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path d="m4 12 8-8M4 4h8v8" /></svg></a
+            ><button class="site-info-link" data-site-info>
+              Site & privacy information</button
+            ><span class="footer-language">English</span>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © <span class="copyright-year">2026</span> Umberto Alinei. All
+            rights reserved.
+          </p>
+          <span class="local-time"></span
+          ><a href="#" class="back-top">Back to top ↑</a>
+        </div>
+      </footer>
+    </div>
+    <dialog class="project-dialog">
+      <button
+        class="dialog-close icon-button"
+        aria-label="Close project details"
+      >
+        ×
+      </button>
+      <p class="eyebrow dialog-category"></p>
+      <h2 class="dialog-title"></h2>
+      <p class="dialog-intro"></p>
+      <div class="dialog-body"></div>
+      <p class="dialog-footnote">
+        Academic project · Personal learning & development.
+      </p>
+    </dialog>
+    <dialog class="site-dialog" aria-labelledby="site-dialog-title">
+      <button
+        class="site-dialog-close icon-button"
+        aria-label="Close site information"
+      >
+        ×
+      </button>
+      <p class="eyebrow">SITE INFORMATION</p>
+      <h2 id="site-dialog-title">A few useful details</h2>
+      <div class="site-info-body">
+        <h3>About this website</h3>
+        <p>
+          This is the personal portfolio of Umberto Alinei, based in Naples,
+          Italy. For questions about the site or your data, contact
+          <a href="mailto:umberto.alinei@gmail.com">umberto.alinei@gmail.com</a
+          >.
+        </p>
+        <h3>Privacy & local preferences</h3>
+        <p>
+          This website does not include analytics, advertising trackers or
+          contact forms. The color-theme preference is stored locally in your
+          browser. Fonts are hosted with the website, rather than loaded from an
+          external font service. Your hosting provider may process technical
+          access logs according to its own policy.
+        </p>
+        <h3>External services & support</h3>
+        <p>
+          Email links open your email application. Social links lead to their
+          respective websites. Support is optional: the coffee link opens an
+          external Stripe payment page. Payment information is handled on
+          Stripe; this portfolio does not collect or process your card details.
+        </p>
+        <h3>Accessibility</h3>
+        <p>
+          The site supports keyboard navigation, visible focus states and
+          reduced-motion preferences. If you experience a problem, please get in
+          touch.
+        </p>
+      </div>
+    </dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
